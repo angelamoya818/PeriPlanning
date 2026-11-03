@@ -37,6 +37,7 @@ Los datos son censurados porque contienen información potencialmente sensible.
 ## Documentos
 
 - Se puede consultar lo relativo al objetivo 0 [aquí](/Objetivos/Objetivo_0/objetivo-0.md).
+- Se puede consultar el [modelo de dominio de HU001](docs/modelo_dominio_hu001.md).
 - Se pueden consultar los perfiles de usuario [aquí](/docs/personas.md).
 - Se pueden consultar las jornadas de usuario [aquí](/docs/jornadas_usuario.md).
 - Se pueden consultar las historias de usuario [aquí](/docs/historias_de_usuario.md).
