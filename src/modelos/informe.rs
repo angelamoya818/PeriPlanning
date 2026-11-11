@@ -1,1 +1,1 @@
-Aún pendiente de hacer
+//Aún pendiente de hacer (issue #19)
