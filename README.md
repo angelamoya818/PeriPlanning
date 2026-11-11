@@ -41,3 +41,16 @@ Los datos son censurados porque contienen información potencialmente sensible.
 - Se pueden consultar las jornadas de usuario [aquí](/docs/jornadas_usuario.md).
 - Se pueden consultar las historias de usuario [aquí](/docs/historias_de_usuario.md).
 - Se pueden consultar los milestones [aquí](/docs/milestones.md).
+
+### Lenguaje
+
+El lenguaje elegido es **Rust**. Lo propuso Alejandro, como propietario del proyecto, y lo hemos acordado en el issue #10.
+
+Lo hemos aceptado porque cumple lo que se pide en el objetivo:
+- Los tipos se comprueban al compilar, así que muchos errores salen antes de ejecutar nada.
+- Lo creado es inmutable por defecto, lo que encaja con los objetos valor.
+- Los valores inválidos (por ejemplo, un estado que no existe) se pueden rechazar al crear el objeto, devolviendo un error.
+- Los `enum` sirven para los valores cerrados que aparecen en las historias de usuario, como los estados Abierto, Cerrado y Reabierto.
+- Se instala en el espacio de usuario con `rustup`, y la versión queda fijada en `rust-toolchain.toml`.
+
+La declaración del lenguaje y de la entidad está en `iv.yaml`.
