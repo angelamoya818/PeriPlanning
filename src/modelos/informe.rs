@@ -2,6 +2,7 @@ use crate::modelos::compania::Compania;
 use crate::modelos::dias_restantes::DiasRestantes;
 use crate::modelos::estado::Estado;
 use crate::modelos::importe::Importe;
+use crate::modelos::numero_siniestro::NumeroSiniestro;
 
 /// Expediente de peritación que aparece en la tabla diaria (issue #19).
 ///
@@ -9,7 +10,7 @@ use crate::modelos::importe::Importe;
 #[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct Informe {
-    numero_siniestro: String,
+    numero_siniestro: NumeroSiniestro,
     compania: Compania,
     estado: Estado,
     dias_restantes: DiasRestantes,
@@ -18,7 +19,7 @@ pub struct Informe {
 
 impl Informe {
     pub fn new(
-        numero_siniestro: String,
+        numero_siniestro: NumeroSiniestro,
         compania: Compania,
         estado: Estado,
         dias_restantes: DiasRestantes,
@@ -33,7 +34,7 @@ impl Informe {
         }
     }
 
-    pub fn numero_siniestro(&self) -> &str {
+    pub fn numero_siniestro(&self) -> &NumeroSiniestro {
         &self.numero_siniestro
     }
 }

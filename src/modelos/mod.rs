@@ -4,3 +4,4 @@ pub mod estado;
 pub mod fecha;
 pub mod importe;
 pub mod informe;
+pub mod numero_siniestro;
