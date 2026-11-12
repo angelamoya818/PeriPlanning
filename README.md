@@ -49,7 +49,7 @@ El lenguaje elegido es **Rust**. Lo propuso Alejandro, como propietario del proy
 Lo hemos aceptado porque cumple lo que se pide en el objetivo:
 - Los tipos se comprueban al compilar, así que muchos errores salen antes de ejecutar nada.
 - Lo creado es inmutable por defecto, lo que encaja con los objetos valor.
-- Los valores inválidos (por ejemplo, un estado que no existe) se pueden rechazar al crear el objeto, devolviendo un error.
+- Los valores cerrados (estado, compañía) se modelan con `enum`, de modo que un valor inválido no se puede ni escribir.
 - Los `enum` sirven para los valores cerrados que aparecen en las historias de usuario, como los estados Abierto, Cerrado y Reabierto.
 - Se instala en el espacio de usuario con `rustup`, y la versión queda fijada en `rust-toolchain.toml`.
 
