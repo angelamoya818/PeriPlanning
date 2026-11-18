@@ -3,6 +3,7 @@ use crate::modelos::dias_restantes::DiasRestantes;
 use crate::modelos::estado::Estado;
 use crate::modelos::importe::Importe;
 use crate::modelos::numero_siniestro::NumeroSiniestro;
+use crate::modelos::fecha::{FechaApertura, FechaCierre, FechaContacto};
 
 #[allow(dead_code)]
 #[derive(Debug, Clone)]
@@ -12,34 +13,8 @@ pub struct Informe {
     estado: Estado,
     dias_restantes: DiasRestantes,
     reserva: Option<Importe>,
+    fecha_apertura: FechaApertura,
+    fecha_contacto: Option<FechaContacto>,
+    fecha_cierre: Option<FechaCierre>,
 }
 
-impl Informe {
-    pub fn new(
-        numero_siniestro: NumeroSiniestro,
-        compania: Compania,
-        estado: Estado,
-        dias_restantes: DiasRestantes,
-        reserva: Option<Importe>,
-    ) -> Self {
-        Self {
-            numero_siniestro,
-            compania,
-            estado,
-            dias_restantes,
-            reserva,
-        }
-    }
-
-    pub fn numero_siniestro(&self) -> &NumeroSiniestro {
-        &self.numero_siniestro
-    }
-}
-
-impl PartialEq for Informe {
-    fn eq(&self, otro: &Self) -> bool {
-        self.numero_siniestro == otro.numero_siniestro
-    }
-}
-
-impl Eq for Informe {}
