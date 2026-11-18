@@ -1,2 +1,2 @@
 lenguaje: rust
-entidad: src/modelos/informe.rs
+entidad: src/modelos/registro_informes.rs
