@@ -1,4 +1,3 @@
-/// Días que quedan antes de que el expediente sufra penalización (issue #15).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct DiasRestantes(u32);
 
