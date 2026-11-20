@@ -1,9 +1,9 @@
-use crate::modelos::compania::Compania;
-use crate::modelos::dias_restantes::DiasRestantes;
-use crate::modelos::estado::Estado;
-use crate::modelos::fecha::{FechaApertura, FechaCierre, FechaContacto};
-use crate::modelos::importe::Importe;
-use crate::modelos::numero_siniestro::NumeroSiniestro;
+use crate::modelo::compania::Compania;
+use crate::modelo::dias_restantes::DiasRestantes;
+use crate::modelo::estado::Estado;
+use crate::modelo::fecha::{FechaApertura, FechaCierre, FechaContacto};
+use crate::modelo::importe::Importe;
+use crate::modelo::numero_siniestro::NumeroSiniestro;
 
 #[allow(dead_code)]
 #[derive(Debug, Clone)]
