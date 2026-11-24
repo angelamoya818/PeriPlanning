@@ -1,2 +1,4 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
-pub struct Importe(u64);
+pub struct Importe {
+    centimos: u64,
+}
