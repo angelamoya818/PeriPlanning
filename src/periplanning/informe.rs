@@ -9,4 +9,5 @@ pub struct Informe {
     reserva: Option<Importe>,
     estado: Estado,
     dias_restantes: DiasRestantes,
+    contactado: bool,
 }
