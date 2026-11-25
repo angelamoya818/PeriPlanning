@@ -7,6 +7,6 @@ use crate::periplanning::importe::Importe;
 pub struct Informe {
     compania: Compania,
     reserva: Option<Importe>,
-    stado: Estado,
+    estado: Estado,
     dias_restantes: DiasRestantes,
 }
